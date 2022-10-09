@@ -1,0 +1,95 @@
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git init
+Initialized empty Git repository in C:/Users/navee/AutomationGit/.git/
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git add -A selenium.txt
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   selenium.txt
+
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git commit -m "This is my first selenium commit"
+[master (root-commit) 5df06de] This is my first selenium commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 selenium.txt
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   selenium.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")            ----------------------- git commit (need to commit after modification)
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git add -u
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   selenium.txt
+
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git remote
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git remote add origin https://github.com/NaveenaDhanasekar98/AutomationGit.git
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git remote
+origin
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git push -u
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 246 bytes | 82.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/NaveenaDhanasekar98/AutomationGit/pull/new/master
+remote:
+To https://github.com/NaveenaDhanasekar98/AutomationGit.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+navee@NaveenaKamal MINGW64 ~/AutomationGit (master)
+$
